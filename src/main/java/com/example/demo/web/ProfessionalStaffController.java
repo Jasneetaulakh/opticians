@@ -2,7 +2,7 @@ package com.example.demo.web;
 
 import com.example.demo.entity.ProfessionalStaff;
 import com.example.demo.service.ProfessionalStaffService;
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

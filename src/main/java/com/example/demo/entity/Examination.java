@@ -1,6 +1,8 @@
 package com.example.demo.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -32,6 +34,15 @@ public class Examination {
 
     @Column(name = "external_eye_exam")
     private String externalEyeExam;
+
+    @Column(name = "lens_meter")
+    private String lensMeter;
+
+    @Column(name = "subjective_refraction")
+    private String subjectiveRefraction;
+
+    @Column(name = "refraction_given")
+    private String refractionGiven;
 
     @Column(name = "management")
     private String management;

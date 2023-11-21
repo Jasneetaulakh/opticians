@@ -22,7 +22,7 @@ public class ApplicationExceptionHandler extends ResponseEntityExceptionHandler 
     protected ResponseEntity<Object> handleMethodArgumentNotValid(
             MethodArgumentNotValidException ex,
             HttpHeaders headers,
-            HttpStatusCode statusCode,
+            HttpStatus status,
             WebRequest request) {
 
         List<String> errors = new ArrayList<>();

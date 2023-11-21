@@ -1,9 +1,8 @@
 package com.example.demo.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.persistence.*;
 import lombok.*;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
 @Getter
@@ -19,10 +18,12 @@ public class Booking {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "appt_date")
+    @Column(name = "appt_date", nullable = false)
+    @NonNull
     private LocalDate apptDate;
 
-    @Column(name = "time_slot")
+    @Column(name = "time_slot", nullable = false)
+    @NonNull
     private String timeSlot;
 
     @ManyToOne(optional = false)

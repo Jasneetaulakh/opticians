@@ -2,7 +2,7 @@ package com.example.demo.web;
 
 import com.example.demo.entity.Booking;
 import com.example.demo.service.BookingService;
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;

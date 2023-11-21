@@ -6,8 +6,16 @@
 
 
 This is a personal side project. I wanted to practice creating a backend application and decided to create something I am familiar with. 
-Its a work in progress and is continually being worked on.
+Its a work in progress and is continually being worked on. 
 
+An Opticians System requires a database of
+* Customers (patients)
+* Staff members (currently only professional staff members)
+* Appointments (bookings)
+* Examinations 
+
+An appointment must be attached to a customer.
+An examination must be attached to a customer and the professional staff member who carried out the exam.
 
 | Booking | Description |
 | -------------- | ----------- |
